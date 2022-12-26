@@ -1,0 +1,70 @@
+<section class="main__section">
+    <div class="container-alta">
+        <h1 class="main__title">Alta</h1>
+
+        <form autocomplete="off">
+            <!-- Campo de nombre -->
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" class="data-validation" />
+            <div class="mensaje-validacion"></div>
+
+            <!-- Campo de precio -->
+            <label for="precio">Precio</label>
+            <input type="text" id="precio" class="data-validation" />
+            <div class="mensaje-validacion"></div>
+
+            <!-- Campo de stock -->
+            <label for="stock">Stock</label>
+            <input type="text" id="stock" class="data-validation" />
+            <div class="mensaje-validacion"></div>
+
+            <!-- Campo de marca -->
+            <label for="marca">Marca</label>
+            <input type="text" id="marca" class="data-validation" />
+            <div class="mensaje-validacion"></div>
+
+            <!-- Campo de categoria -->
+            <label for="categoria">Categoría</label>
+            <input type="text" id="categoria" class="data-validation" />
+            <div class="mensaje-validacion"></div>
+
+            <!-- Campo de detalles -->
+            <label for="detalles">Detalles</label>
+            <input type="text" id="detalles" class="data-validation" />
+            <div class="mensaje-validacion"></div>
+
+            <!-- Campo de foto -->
+            <!-- <label for="foto">Foto</label>
+    <input type="text" id="foto" />
+    <div></div> -->
+
+            <div id="drop-area">
+                <p>Subir imagen al servidor con <b>file dialog</b> o con <b>drag and drop</b> dentro del área punteada</p>
+
+                <input type="file" id="foto" accept="image/*">
+                <label class="button" for="foto">File Dialog</label>
+
+
+                <progress id="progress-bar" max="100" value="0"></progress>
+
+                <div id="gallery"><img src="" alt=""></div>
+            </div>
+
+            <!-- Campo de envio -->
+            <div class="cntr">
+                <input checked="" type="checkbox" id="cbx" class="hidden-xs-up">
+                <label for="cbx" class="cbx"><br ><p style="padding-right: 20px;"> Envío</p></label>
+            </div>
+            <div></div>
+
+            <button>Agregar</button>
+        </form>
+
+        <div class="show-products">
+            <h2 class="show-products__title">Listado de productos</h2>
+            <button class="show-products__btn show-products__btn--close" title="Ocultar listado de productos">Ocultar listado de productos</button>
+        </div>
+
+        <div id="listado-productos"></div>
+    </div>
+</section>
